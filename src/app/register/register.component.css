@@ -1,0 +1,35 @@
+*
+{
+    color: white 
+    ;
+}
+
+input
+{
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #606d8fd3 ;
+}
+
+input:focus-visible
+{
+    outline: none;
+}
+input:focus
+{
+    border-color:rgba(73, 152, 237, 0.81);;
+}
+
+label
+{
+    position: relative;
+}
+
+label::after
+{
+    content: " * ";
+    position: absolute;
+    top: 20%;
+    left: 110%;
+    color: red;
+}

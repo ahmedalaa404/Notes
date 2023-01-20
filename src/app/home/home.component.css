@@ -1,0 +1,22 @@
+.note-display
+{
+    background-color: white;
+    border-radius: 9px;
+}
+.note-display section
+{
+    border-bottom: 1px solid rgb(146, 145, 145);
+}
+.optionEdite
+{
+    cursor: pointer!important;
+    font-size: 18px;
+}
+form input ,form textarea 
+{
+    border-radius: 7px;
+}
+form input:focus-visible ,form textarea:focus-visible 
+{
+    outline: none;
+}

@@ -1,0 +1,39 @@
+<ngx-spinner type="ball-scale-multiple">
+</ngx-spinner>
+
+
+
+
+<div class="vh-100">
+    <h4 class="text-danger" *ngIf="errormessage">{{errormessage}}</h4>
+    <form action="" [formGroup]="loginform" (submit)="login()">
+
+        <div class="container h-75 w-100 justify-content-center align-items-center d-flex">
+            <div class="row w-100">
+                <div class="my-3 col-lg-12 text-white">
+                    <label for="email" class="my-1">email</label>
+                    <input type="email" class="w-100 form-control" formControlName="email">
+                </div>
+                <div class="my-3 col-lg-12 text-white">
+                    <label for="password" class="my-1">Password</label>
+                    <input type="password" class="w-100 form-control" formControlName="password">
+                </div>
+                <div class="d-flex justify-content-center">
+                    <button type='submit'
+                        [classList]="loginform.valid?'btn btn-outline-primary':'btn btn-outline-danger'"
+                        [disabled]="loginform.status=='INVALID'">
+                        <span *ngIf="isloading">Login Now </span>
+                        <span *ngIf="!isloading"><i class="fa-solid fa-spinner fa-circle-notch fa-spin"></i></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+
+
+<!--  [classList]="loginform.valid?'btn-outline-danger':'btn-outline-primary'" -->
+
+<!-- status=='"INVALID"' -->
+
+<!-- [disabled]="loginform.status=='INVALID'" -->

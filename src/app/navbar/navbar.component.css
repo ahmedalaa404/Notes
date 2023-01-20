@@ -1,0 +1,14 @@
+nav
+{
+    box-shadow: 0px 7px 15px -14px white;
+    background-color: #10131b;
+}
+a
+{
+    cursor: pointer;
+}
+.logout:hover
+{
+    color: rgba(180, 63, 63, 0.696) !important;
+    cursor: pointer;
+}
